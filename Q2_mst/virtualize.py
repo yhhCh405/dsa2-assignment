@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from kruskal import DisjointSet, kruskal
 
 # define graph
-vertices=['A','B','C','D']
-edges=[('A','B',3),('A','C',1),('B','C',7),('B','D',5),('C','D',2)]
+vertices=['A','B','C','D','E','F','Z']
+edges=[('A','B',2),('A','C',7),('C','D',3),('B','D',1),('B','E',5),('D','Z',6),('D','F',4),('C','F',10),('F','Z',3),('E','Z',3)]
 G=nx.Graph(); G.add_weighted_edges_from(edges)
 pos=nx.spring_layout(G)
 
